@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.medell.medbox.Login"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/icon_top_margin"
+        android:src="@drawable/app_logo" />
+
+    <LinearLayout
+        android:id="@+id/login_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_icon"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/icon_top_margin"
+        android:background="@drawable/input_background"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/input_text_padding"
+            android:hint="@string/hint_email"
+            android:textSize="@dimen/input_text_size"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/username_drawable_left"
+            android:drawablePadding="@dimen/input_text_padding"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/username_drawable_left" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height"
+            android:background="@color/input_divider_line"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/input_text_padding"
+            android:hint="@string/hint_password"
+            android:textSize="@dimen/input_text_size"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/password_drawable_left"
+            android:drawablePadding="@dimen/input_text_padding"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/password_drawable_left" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_details_layout"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:background="@drawable/btn_background"
+        android:text="@string/login_log_in_btn"
+        android:textColor="@android:color/white"
+        android:onClick="Login"/>
+
+
+    <Button
+        android:id="@+id/login_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_login_btn"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:background="@drawable/btn_background"
+        android:text="@string/register_btn"
+        android:textColor="@android:color/white"
+        android:onClick="Register"/>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MEDBOX</string>
+    <!--  Login id and Register id Activity-->
+    <string name="hint_email">EMAIL ADDRESS</string>
+    <string name="hint_password">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</string>
+    <string name="register_btn">REGISTER USER…</string>
+
+    <!--  Login id Activity-->
+    <string name="login_log_in_btn">LOG IN</string>
+
+    <!--  BlueConnect  Activity-->
+    <string name="turn_on_btn">TURN ON</string>
+    <string name="turn_off_btn">TURN OFF</string>
+    <string name="scan_devices_btn">SCAN DEVICES</string>
+    <string name="scan_devices_list">SCANNED DEVICES</string>
+    <string name="pair_devices_list">PAIRED DEVICES</string>
+    <string name="select_dosage">SELECT DOSAGE</string>
+    <string name="signout">SIGN OUT</string>
+    <string name="deactivate_account">DEACTIVATE ACCOUNT</string>
+
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "56041931757",
+    "firebase_url": "https://medbox-timer.firebaseio.com",
+    "project_id": "medbox-timer",
+    "storage_bucket": "medbox-timer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56041931757:android:4751b81c53e586b7",
+        "android_client_info": {
+          "package_name": "com.example.medell.medbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56041931757-4kdv03149bouj1q8unbl779pse9d9078.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medell.medbox",
+            "certificate_hash": "ed9a3205ae9c79680444ced125d76f6f3efdbc02"
+          }
+        },
+        {
+          "client_id": "56041931757-3pa8up305fg89jpe09iqlit6jvha3tms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCetJ3r2N4r_egS67SuP1ZDuGeonjgGvQU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56041931757-3pa8up305fg89jpe09iqlit6jvha3tms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

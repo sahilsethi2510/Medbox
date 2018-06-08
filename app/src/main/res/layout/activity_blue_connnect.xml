@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.medell.medbox.BlueConnnect"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/connect_turn_on_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/Blue_margin_top"
+        android:background="@drawable/btn_background"
+        android:text="@string/turn_on_btn"
+        android:textColor="@android:color/white"
+        android:onClick="TURN_ON"/>
+
+    <Button
+        android:id="@+id/connect_turn_off_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_below="@+id/connect_turn_on_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:background="@drawable/btn_background"
+        android:text="@string/turn_off_btn"
+        android:textColor="@android:color/white"
+        android:onClick="TURN_OFF"/>
+
+    <Button
+        android:id="@+id/connect_scan_devices_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_below="@+id/connect_turn_off_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:background="@drawable/btn_background"
+        android:text="@string/scan_devices_btn"
+        android:textColor="@android:color/white"
+        android:onClick="SCAN_DEVICES"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connect_scan_devices_btn"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:text="@string/scan_devices_list"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/input_text_size"
+        android:textAlignment="center"
+        android:id="@+id/scan_device_txt"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:id="@+id/scan_device_list"
+        android:layout_below="@id/scan_device_txt"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan_device_list"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:text="@string/pair_devices_list"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/input_text_size"
+        android:textAlignment="center"
+        android:id="@+id/pair_device_txt"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:id="@+id/pair_device_list"
+        android:layout_below="@id/pair_device_txt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pair_device_list"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:text="@string/select_dosage"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/input_text_size"
+        android:textAlignment="center"
+        android:id="@+id/select_doage_txt" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_doage_txt"
+        android:id="@+id/dosage_spinner"
+        android:textAlignment="center">
+    </Spinner>
+
+
+</RelativeLayout>
